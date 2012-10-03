@@ -2,6 +2,7 @@ module BestInPlace
   module BestInPlaceHelpers
 
     def best_in_place(object, field, opts = {})
+
       if opts[:display_as] && opts[:display_with]
         raise ArgumentError, "Can't use both 'display_as' and 'display_with' options at the same time"
       end
@@ -40,7 +41,7 @@ module BestInPlace
       out << " data-activator='#{opts[:activator]}'" unless opts[:activator].blank?
       out << " data-ok-button='#{opts[:ok_button]}'" unless opts[:ok_button].blank?
       out << " data-cancel-button='#{opts[:cancel_button]}'" unless opts[:cancel_button].blank?
-      out << " data--confirm-message='#{opts[:confirm_message]}'" unless opts[:confirm_message].nil?
+      out << " data-confirm='#{opts[:confirm]}'" unless opts[:confirm].nil?
       out << " data-nil='#{opts[:nil]}'" unless opts[:nil].blank?
       out << " data-type='#{opts[:type]}'"
       out << " data-inner-class='#{opts[:inner_class]}'" if opts[:inner_class]
