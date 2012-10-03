@@ -54,6 +54,7 @@ Options:
 - **:activator**: Is the DOM object that can activate the field. If not defined the user will making editable by clicking on it.
 - **:ok_button**: (Inputs and textareas only) If set to a string, then an OK button will be shown with the string as its label, replacing save on blur.
 - **:cancel_button**: (Inputs and textareas only) If set to a string, then a Cancel button will be shown with the string as its label.
+- **:confirm_message**: (when user cancels editing) Custom confirmation message.
 - **:sanitize**: True by default. If set to false the input/textarea will accept html tags.
 - **:html_attrs**: Hash of html arguments, such as maxlength, default-value etc.
 - **:inner_class**: Class that is set to the rendered form.
